@@ -2,23 +2,23 @@
 param( $OverrideVersion="3.0")
 # Instance variables
 #    BuildInstance - SQL Server instance name for building 
-$BuildInstance = "localhost"
+$BuildInstance = "Aristotle"
 
 # Database Variables
 #    BuildDB - existing database used for build connection. Won't be altered
-$BuildDB = "master"
+$BuildDB = "builddb"
 
 # Package Variables
 #    PackageID - Set the nuget package name to be used
 #    PackageVersion - suffix on nuget package id.
-$PackageID = "SQLServerCentralDB"
+$PackageID = "SimpleTalkDB"
 $PackageVersion = $OverrideVersion
 
 # Path variables
 #   ProjectFile - full local path to the SCA project file (.sqlproj)
 #   BuildArtifactPath - Path where the Nuget package is stored
-$ProjectFile = "C:\Users\way0u\Documents\git\SQLServerCentralDB\SQLServerCentral\SQLServerCentral.sqlproj"
-$BuildArtifactPath = "c:\buildartifacts"
+$ProjectFile = "E:\Documents\git\SimpleTalkDemo\SimpleTalkDB\SimpleTalkDB.sqlproj"
+$BuildArtifactPath = "E:\buildartifacts"
 
 # Debug
 # Use Continue to get more output
